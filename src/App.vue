@@ -4,7 +4,7 @@
       <DesktopNavigation class="desktop-nav"/>
       <MobileNavigation class="mobile-nav" />
       <router-view />
-      <ApplicationFooter/>
+      <ApplicationFooter class="mt-5"/>
     </v-main>
   </v-app>
 </template>

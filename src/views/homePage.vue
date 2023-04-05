@@ -1,7 +1,7 @@
 <template>
   <div class="home-page-container">
     <HotNewsBanner />
-    <div class="header-container">
+    <div class="header-container application_animation">
       <v-container>
         <v-row no-gutters>
           <v-col cols="12">
@@ -20,15 +20,51 @@
       </v-container>
     </div>
     <HotNewsBanner />
-    <v-container>
-      <HomeSlider />
+    <v-container class="mt-5">
+      <HomeSlider class="application_animation" />
     </v-container>
+    <v-container class="mt-5 application_animation">
+      <v-row no-gutters>
+        <v-col cols="12" md="6" lg="6" xl="6">
+          <v-sheet>
+            <img
+              src="https://schools.firstnews.co.uk/wp-content/uploads/sites/3/2019/10/Whats-on-Front-Page-of-Newspaper-Featured-1200x720.png"
+              alt=""
+            />
+          </v-sheet>
+        </v-col> 
+        <v-col class="mt-5" cols="12" md="6" lg="6" xl="6">
+          <v-sheet class="px-5">
+            <span>Frist News Blogs</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure
+              excepturi architecto fugiat autem recusandae ipsum. Corporis aut ea
+              voluptatum ullam, iusto eveniet illo rem vero dicta, quaerat minima harum
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              reiciendis explicabo tempora delectus, maiores illum, nisi unde fugiat sequi
+              optio at deserunt nemo placeat beatae, laborum possimus omnis architecto
+              eveniet
+            </p>
+            <div>
+              <v-btn color="red" class="mt-4 application_animation" rounded="xl"
+                >get started</v-btn
+              >
+            </div>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-container>
+    <HotNewsBanner class="mt-5" />
+    <HomeCarousel class="application_animation" />
+    <HotNewsBanner />
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import HomeSlider from "@/components/HomeSlider";
+import HomeCarousel from "@/components/HomeCarousel";
 import HotNewsBanner from "@/components/HotNewsBanner";
 const dialog = ref(false);
 </script>
@@ -49,5 +85,17 @@ const dialog = ref(false);
   span {
     color: #fff;
   }
+}
+img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+}
+span {
+  font-size: 22px;
+  color: red;
+}
+p {
+  font-size: 12px;
 }
 </style>
