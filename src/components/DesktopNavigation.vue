@@ -7,8 +7,8 @@
     <div class="items-container">
       <div class="d-flex mx-5 px-5">
         <span class="application_pointer pt-1" @click="goToHome">Home</span>
-        <span class="application_pointer pt-1 px-4" @click="goToHome">News</span>
-        <span class="application_pointer pt-1" @click="goToHome">Blogs</span>
+        <span class="application_pointer pt-1 px-4" @click="goToNews">News</span>
+        <span class="application_pointer pt-1" @click="goToBlogs">Blogs</span>
         <span class="application_pointer pt-1 px-4" @click="goToAbout">About</span>
         <i class="bi bi-search text-h5 px-3"></i>
       </div>
@@ -22,11 +22,19 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const goToHome = () => {
-  return router.push("/home");
+  router.push("/");
+};
+
+const goToNews = () => {
+  router.push("/news");
+};
+
+const goToBlogs = () => {
+  router.push("/blogs");
 };
 
 const goToAbout = () => {
-  return router.push("/about");
+  router.push("/about");
 };
 
 </script>

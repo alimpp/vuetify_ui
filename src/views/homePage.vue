@@ -13,7 +13,17 @@
               perferendis...</span
             >
             <div>
-              <v-btn class="mt-4 application_animation" rounded="xl">get started</v-btn>
+              <v-btn
+                class="mt-4 application_animation"
+                rounded="xl"
+                :loading="loading"
+                @click="loading = !loading"
+              >
+                get started
+                <template v-slot:loader>
+                  <v-progress-linear indeterminate></v-progress-linear>
+                </template>
+              </v-btn>
             </div>
           </v-col>
         </v-row>
@@ -21,7 +31,7 @@
     </div>
     <HotNewsBanner />
     <v-container class="mt-5">
-      <HomeSlider class="application_animation" />
+      <Slider class="application_animation" />
     </v-container>
     <v-container class="mt-5 application_animation">
       <v-row no-gutters>
@@ -32,7 +42,7 @@
               alt=""
             />
           </v-sheet>
-        </v-col> 
+        </v-col>
         <v-col class="mt-5" cols="12" md="6" lg="6" xl="6">
           <v-sheet class="px-5">
             <span>Frist News Blogs</span>
@@ -47,9 +57,18 @@
               eveniet
             </p>
             <div>
-              <v-btn color="red" class="mt-4 application_animation" rounded="xl"
-                >get started</v-btn
+              <v-btn
+                color="red"
+                rounded="xl"
+                class="mt-4 application_animation"
+                :loading="loading"
+                @click="loading = !loading"
               >
+                get started
+                <template v-slot:loader>
+                  <v-progress-linear indeterminate></v-progress-linear>
+                </template>
+              </v-btn>
             </div>
           </v-sheet>
         </v-col>
@@ -62,11 +81,20 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import HomeSlider from "@/components/HomeSlider";
+import { ref, watch } from "vue";
+import Slider from "@/components/Slider";
 import HomeCarousel from "@/components/HomeCarousel";
 import HotNewsBanner from "@/components/HotNewsBanner";
-const dialog = ref(false);
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const loading = ref(false);
+
+watch(loading, (newValue, oldValue) => {
+  setTimeout(() => {
+    router.push("/news");
+  }, 2000);
+});
 </script>
 
 <style scoped lang="scss">

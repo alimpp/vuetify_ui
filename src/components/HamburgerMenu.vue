@@ -8,8 +8,10 @@
 
         <v-row class="d-flex flex-column mt-5 pt-5" align="center" no-gutters>
           <div class="d-flex flex-column">
-            <span class="application_pointer pt-5" @click="goToHome">Home</span>
-            <span class="application_pointer" @click="goToAbout">About</span>
+            <span class="application_pointer pt-1" @click="goToHome">Home</span>
+        <span class="application_pointer pt-1 px-4" @click="goToNews">News</span>
+        <span class="application_pointer pt-1" @click="goToBlogs">Blogs</span>
+        <span class="application_pointer pt-1 px-4" @click="goToAbout">About</span>
           </div>
           <div class="d-flex mt-5">
             <i class="bi bi-instagram px-1"></i>
@@ -31,14 +33,27 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const isOpen = ref(false);
+
 const goToHome = () => {
-  router.push("/home");
+  router.push("/");
   openSideBar();
 };
+
+const goToNews = () => {
+  router.push("/news");
+  openSideBar();
+};
+
+const goToBlogs = () => {
+  router.push("/blogs");
+  openSideBar();
+};
+
 const goToAbout = () => {
   router.push("/about");
   openSideBar();
 };
+
 const openSideBar = () => {
   isOpen.value = !isOpen.value;
 };
