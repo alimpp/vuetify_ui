@@ -13,15 +13,13 @@
         ></div>
       </template>
       <div>
-        <h5 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
-          Lorem ipsum
-        </h5>
+        <h5 :class="`mt-n1 mb-4 text-${year.color}`">Lorem ipsum</h5>
         <div>
-         <h6>
+          <h6>
             Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet
-          nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim
-          zril disputando voluptatibus, vix an salutandi sententiae.
-         </h6>
+            nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an
+            vim zril disputando voluptatibus, vix an salutandi sententiae.
+          </h6>
         </div>
       </div>
     </v-timeline-item>

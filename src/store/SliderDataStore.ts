@@ -10,7 +10,7 @@ export const SliderDataStore = defineStore('slider' , {
         } ,
         {
             id:1 , 
-            image : "https://api.lorem.space/image/face?w=150&h=150" , 
+            image : "https://sb.kaleidousercontent.com/67418/1920x1545/c5f15ac173/samuel-raita-ridxdghg7pw-unsplash.jpg" , 
             email : "alexa@mail.com" , 
             username : "alexa" , 
             text : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as..."
@@ -24,7 +24,7 @@ export const SliderDataStore = defineStore('slider' , {
         } ,
         {
             id:3 , 
-            image : "https://api.lorem.space/image/face?w=150&h=150" , 
+            image : "https://img.freepik.com/free-photo/portrait-smiley-modern-male_23-2148514900.jpg" , 
             email : "mikelas2021@yahoo.com" , 
             username : "miklas2021" , 
             text : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as..."
@@ -38,21 +38,21 @@ export const SliderDataStore = defineStore('slider' , {
         } ,
         {
             id:5 , 
-            image : "https://api.lorem.space/image/face?w=150&h=150" , 
+            image : "https://www.irreverentgent.com/wp-content/uploads/2018/03/Awesome-Profile-Pictures-for-Guys-banner-1024x683.jpg" , 
             email : "leo@mail.cm" , 
             username : "leo2023" , 
             text : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as..."
         } ,
         {
             id:6 , 
-            image : "https://api.lorem.space/image/face?w=150&h=150" , 
+            image : "https://static.vecteezy.com/system/resources/thumbnails/003/492/047/small/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg" , 
             email : "theodark20@face.com" , 
             username : "the1996" , 
             text : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as..."
         } ,
         {
             id:7 , 
-            image : "https://api.lorem.space/image/face?w=150&h=150" , 
+            image : "https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" , 
             email : "michel1990@mail.com" , 
             username : "michel" , 
             text : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as..."

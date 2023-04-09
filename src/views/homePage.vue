@@ -45,7 +45,7 @@
         </v-col>
         <v-col class="mt-5" cols="12" md="6" lg="6" xl="6">
           <v-sheet class="px-5">
-            <span>Frist News Blogs</span>
+            <span>Frist News</span>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure
               excepturi architecto fugiat autem recusandae ipsum. Corporis aut ea
@@ -77,6 +77,48 @@
     <HotNewsBanner class="mt-5" />
     <HomeCarousel class="application_animation" />
     <HotNewsBanner />
+    <v-container>
+      <v-row>
+        <v-col cols="12" md="6" lg="6" xl="6">
+          <v-sheet>
+            <AvatarTimeLine />
+          </v-sheet>
+        </v-col>
+        <v-col class="mt-5" cols="12" md="6" lg="6" xl="6">
+          <v-sheet class="px-5 mt-5">
+            <img
+              src="https://schools.firstnews.co.uk/wp-content/uploads/sites/3/2019/10/Whats-on-Front-Page-of-Newspaper-Featured-1200x720.png"
+              alt=""
+            />
+            <span>Frist News</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure
+              excepturi architecto fugiat autem recusandae ipsum. Corporis aut ea
+              voluptatum ullam, iusto eveniet illo rem vero dicta, quaerat minima harum
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              reiciendis explicabo tempora delectus, maiores illum, nisi unde fugiat sequi
+              optio at deserunt nemo placeat beatae, laborum possimus omnis architecto
+              eveniet
+            </p>
+            <div>
+              <v-btn
+                color="red"
+                rounded="xl"
+                class="mt-4 application_animation"
+                :loading="loading"
+                @click="loading = !loading"
+              >
+                get started
+                <template v-slot:loader>
+                  <v-progress-linear indeterminate></v-progress-linear>
+                </template>
+              </v-btn>
+            </div>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -85,6 +127,7 @@ import { ref, watch } from "vue";
 import Slider from "@/components/Slider";
 import HomeCarousel from "@/components/HomeCarousel";
 import HotNewsBanner from "@/components/HotNewsBanner";
+import AvatarTimeLine from "@/components/AvatarTimeLine";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
