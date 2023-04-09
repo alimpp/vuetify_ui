@@ -11,7 +11,7 @@ export const NewsDataStore = defineStore('news' , {
         } , 
         {
             id : 2 ,
-            authorimage : "https://api.lorem.space/image/face?w=150&h=150" , 
+            authorimage : "https://sb.kaleidousercontent.com/67418/1920x1545/c5f15ac173/samuel-raita-ridxdghg7pw-unsplash.jpg" , 
             authoremail : "alexa@mail.com" ,
             image : "https://image.cnbcfm.com/api/v1/image/106807780-1607434444042-gettyimages-1177856488-AFP_1LO849.jpeg?v=1623270505&w=1920&h=1080" , 
             title : "Facebook News" , 
@@ -27,7 +27,7 @@ export const NewsDataStore = defineStore('news' , {
         } , 
         {
             id : 5 , 
-            authorimage : "https://api.lorem.space/image/face?w=150&h=150" , 
+            authorimage : "https://sb.kaleidousercontent.com/67418/1920x1545/c5f15ac173/samuel-raita-ridxdghg7pw-unsplash.jpg" , 
             authoremail : "mikelas2021@yahoo.com" , 
             image : "https://www.globalfleet.com/sites/default/files/field/image/1453888120_bmw_munich.jpg" , 
             title : "Bmw News" , 
@@ -43,7 +43,7 @@ export const NewsDataStore = defineStore('news' , {
         } , 
         {
             id : 1 , 
-            authorimage : "https://api.lorem.space/image/face?w=150&h=150" , 
+            authorimage : "https://sb.kaleidousercontent.com/67418/1920x1545/c5f15ac173/samuel-raita-ridxdghg7pw-unsplash.jpg" , 
             authoremail : "leo@mail.com" , 
             image : "https://media.zenfs.com/en/quartz.com/525ef32d090987f5f91b7012e7ea5553" , 
             title : "Tesla News" , 
@@ -51,7 +51,7 @@ export const NewsDataStore = defineStore('news' , {
         } , 
         {
             id : 3 , 
-            authorimage : "https://api.lorem.space/image/face?w=150&h=150" , 
+            authorimage : "https://sb.kaleidousercontent.com/67418/1920x1545/c5f15ac173/samuel-raita-ridxdghg7pw-unsplash.jpg" , 
             authoremail : "theodark20@face.com" , 
             image : "https://www.equitypandit.com/wp-content/uploads/2022/09/Instagram_ep.jpg" , 
             title : "Instagram News" , 
