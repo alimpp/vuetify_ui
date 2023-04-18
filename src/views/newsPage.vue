@@ -67,13 +67,13 @@
         </v-vol>
       </v-row>
     </v-container>
-    <HotNewsBanner class="mt-5 application_animation" />
+    <HotNewsBanner class="mt-5 application_animation" v-if="!circularLoading" />
     <v-container>
-      <YearsTimeLine class="mt-5 application_animation" />
+      <YearsTimeLine class="mt-5 application_animation" v-if="!circularLoading" />
     </v-container>
-    <HotNewsBanner class="application_animation" />
+    <HotNewsBanner class="application_animation" v-if="!circularLoading" />
     <v-container>
-      <Slider class="mt-5 application_animation" />
+      <Slider class="mt-5 application_animation" v-if="!circularLoading" />
     </v-container>
   </div>
 </template>
